@@ -23,25 +23,26 @@ def ColetarNum2():
 
 def Operacao():
     Menu()#Chamando o método menu, para mostrar os dados em tela
-    if(this.opcao == 1):
-        ColetarNum1()#Pedindo para digitar o primeiro número
-        ColetarNum2()#Pedindo para digitar o segundo número
-        print(ModelCalculadora.somar(this.num1, this.num2))
-    elif this.opcao == 2:
-        ColetarNum1()
-        ColetarNum2()
-        print(ModelCalculadora.subtrair(this.num1, this.num2))
-    elif this.opcao == 3:
-        ColetarNum1()
-        ColetarNum2()
-        print(ModelCalculadora.dividir(this.num1, this.num2))
-    elif this.opcao == 4:
-        ColetarNum1()
-        ColetarNum2()
-        print(ModelCalculadora.multiplicar(this.num1, this.num2))
-    elif this.opcao == 5:
-        ColetarNum1()
-        print(ModelCalculadora.tabuada(this.num1))
-    else:
-        print('Número digitado invalido!')
+    while(this.opcao != -1):
+        if(this.opcao == 1):
+            ColetarNum1()#Pedindo para digitar o primeiro número
+            ColetarNum2()#Pedindo para digitar o segundo número
+            print(ModelCalculadora.somar(this.num1, this.num2))
+        elif this.opcao == 2:
+            ColetarNum1()
+            ColetarNum2()
+            print(ModelCalculadora.subtrair(this.num1, this.num2))
+        elif this.opcao == 3:
+            ColetarNum1()
+            ColetarNum2()
+            print(ModelCalculadora.dividir(this.num1, this.num2))
+        elif this.opcao == 4:
+            ColetarNum1()
+            ColetarNum2()
+            print(ModelCalculadora.multiplicar(this.num1, this.num2))
+        elif this.opcao == 5:
+            ColetarNum1()
+            print(ModelCalculadora.tabuada(this.num1))
+        else:
+            print('Número digitado invalido!')
 
